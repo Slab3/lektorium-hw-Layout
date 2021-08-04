@@ -1,0 +1,100 @@
+.dices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.line-items {
+    margin: 0 auto;
+}
+
+.dice {
+    list-style: none;
+    padding: 1vw;
+    width: 10vw;
+    height: 10vw;
+
+    border: calc(0.7vw + 1px) solid black;
+    border-radius: 2.5vw;
+    display: inline-flex;
+    vertical-align: top;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.dice-dot {
+    font-size: 0;
+}
+.dice-dot::before {
+    content: "";
+    display: inline-block;
+    width: 1.8vw;
+    height: 1.8vw;
+    background-color: black;
+    border-radius: 50%;
+}
+
+
+/* dice 1 */
+.dice-1 {
+    justify-content: center;
+    align-items: center;
+}
+
+/* dice 2 */
+.dice-2 {
+    justify-content: space-between;
+}
+.dice-2 .dice-dot:nth-child(2) {
+    align-self: flex-end;
+}
+
+/* dice 3 */
+.dice-3 {
+    justify-content: space-between;
+}
+.dice-3 .dice-dot:nth-child(2) {
+    align-self: center;
+}
+.dice-3 .dice-dot:nth-child(3) {
+    align-self: flex-end;
+}
+
+/* dice 4 */
+.dice-4 {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.dice-4 .dice-dot {
+    width: 50%;
+}
+.dice-4 .dice-dot:nth-child(even) { /* nth-child(even) = чётные элементы. */
+    text-align: right;
+}
+
+/* dice 5 */
+.dice-5 {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.dice-5  .dice-dot:nth-child(3) {
+    width: 100%;
+    text-align: center;
+}
+
+/* dice 6 */
+.dice-6 {
+    /*flex-flow: wrap column;*/
+    flex-wrap: wrap;
+    /*flex-direction: column;*/
+    justify-content: space-between;
+    align-content: space-between;
+}
+.dice-6 .dice-dot {
+    width: 50%;
+}
+.dice-6 .dice-dot:nth-child(even) {
+    text-align: right;
+}
