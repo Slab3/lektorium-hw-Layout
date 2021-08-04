@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="src/styles/form.css">
+    <script defer src="src/scripts/form.js"></script>
+    <title>Form Lektorium</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="block-sign">
+        <h2 class="logo">Stackfindover</h2>
+        <div class="form">
+            <form id="form">
+                <h2>Sign in to your account</h2>
+                <div class="input-field">
+                    <div>
+                        <label for="inputEmail" class="label-inp text-links-labels">Email</label>
+                    </div>
+                    <input type="text" id="inputEmail" class="title" required>
+                </div>
+
+                <div class="input-field">
+                    <div>
+                        <label for="inputPassword" class="label-inp text-links-labels">Password</label>
+                        <a href="https://www.google.com/" class="text-links-labels">Forgot your password?</a>
+                    </div>
+                    <input type="password" id="inputPassword" class="title" required>
+                </div>
+
+                <div class="checkbox-field">
+                    <input type="checkbox" id="inputStaySigned">
+                    <label for="inputStaySigned" class="text-links-labels">Stay signed in for a week</label>
+                </div>
+
+                <button class="continue-btn">Continue</button>
+                <div class="google-login">
+                    <a href="https://www.google.com/maps/" >Use single sign-on (Google) instead</a>
+                </div>
+            </form>
+        </div>
+        <div class="no-acc-link">
+            <span>Don't have an account?</span>
+            <a href="https://www.facebook.com/" class="nav-link"> Sign Up </a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

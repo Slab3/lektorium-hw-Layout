@@ -1,0 +1,146 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+p, h1, h2, h3, h4, ul, body, button {
+    margin: 0;
+    padding: 0;
+}
+html {
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+/*---*/
+
+.block-sign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6vh;
+}
+.logo {
+    padding: 15px;
+    color: #4c46c3;
+    font-weight: bolder;
+}
+
+.form {
+    margin: 0 auto;
+    border-radius: 5px;
+    max-width: 420px;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+form h2 {
+    text-align: left;
+    font-weight: 400;
+}
+
+a {
+    color: #4c46c3;
+    font-weight: 600;
+}
+a:hover {color: #4943a0;}
+
+
+/* input */
+
+.input-field {
+    margin: 15px auto;
+}
+.input-field div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+    min-width: 320px;
+    color: #616161;
+    border: 2px solid #aebcd6;
+    border-radius: 4px;
+    padding: 12px;
+}
+.title::placeholder {color: #cccccc}
+
+.title:focus {
+    border-color: #7e7ea5;
+ }
+
+@media all and (max-width: 420px) {
+    .form {
+        padding: 14px 30px;
+    }
+    .title {
+        min-width: 220px;
+    }
+}
+
+.label-inp {
+    width: max-content;
+    margin: 0 0 10px;
+    font-weight: 600;
+    color: black;
+}
+.text-links-labels {
+    font-size: 14px;
+}
+.title, .label-inp {
+    transition: .3s ease;
+}
+.title:focus {
+    color: #232323;
+    font-size: 16px;
+}
+
+.checkbox-field {
+    margin: 15px 0;
+}
+.checkbox-field input, .checkbox-field label {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.continue-btn {
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #4c46c3;
+    min-width: 240px;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.continue-btn:hover {
+    background-color: #4943a0;
+}
+
+.google-login {
+    margin: 10px;
+    text-align: center;
+}
+
+.no-acc-link {
+    padding: 15px;
+}
+
+
+
